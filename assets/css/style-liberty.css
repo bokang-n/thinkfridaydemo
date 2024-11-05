@@ -20317,8 +20317,14 @@ h4.number {
   -webkit-transition: 0.3s ease;
   background: var(--bg-color);
   border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: 0.3s ease;
 }
-
+.grids5-info {
+  flex: 1;
+}
 .w3l-blog-block-5 .blog-card-single:hover h4 a {
   color: var(--primary-color);
 }
@@ -20369,12 +20375,16 @@ h4.number {
 .blog-info img {
   border-radius: 50% !important;
 }
-
+.w3l-blog-block-5 .col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.333%;
+  display: flex;
+  align-items: stretch;
+}
 .w3l-blog-block-5 .col-lg-4.col-md-6 {
   display: flex;
   align-items: stretch;
 }
-
 /* pagination blog page */
 .pagination-style {
   display: block;
