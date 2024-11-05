@@ -4371,6 +4371,16 @@ fieldset:disabled .btn {
   border-top-right-radius: 0;
 }
 
+.navbar-brand img {
+  height: 60px; /* Set a height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent extra space below the image */
+  padding-right: 10px;
+  margin-left: 60px;
+  margin-right: 0;
+  justify-items: end;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
