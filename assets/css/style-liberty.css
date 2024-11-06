@@ -20656,9 +20656,18 @@ h4.inner-text-title {
 
 /* team section */
 
-.w3l-team .column {
-  overflow: hidden;
+.w3l-team .card{
+  margin: 15px;
   border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.w3l-team .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.w3l-team .column {
+  padding: 15px;
 }
 
 .w3l-team .column a img {
