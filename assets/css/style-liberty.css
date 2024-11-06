@@ -20655,19 +20655,19 @@ h4.inner-text-title {
 /* //about section */
 
 /* team section */
-.row {
+
+.w3l-team .card{
+  margin: 15px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.w3l-team .row{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.team-info {
-  flex: 1 1 33.33%;
-  max-width: 33.33%; /* Ensures the item doesn't grow beyond a third */
-  padding: 10px; /* Adjust spacing as needed */
-}
 .w3l-team .column {
-  overflow: hidden;
-  border-radius: var(--border-radius);
+  padding: 15px;
 }
 
 .w3l-team .column a img {
