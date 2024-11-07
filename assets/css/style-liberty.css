@@ -19722,7 +19722,7 @@ h4.number {
 
 /* testimonials section */
 .w3l-index4 {
-  background: url(../images/bg1.jpg) no-repeat center;
+  background: url(../images/pexels-jeshoots-218863.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19765,7 +19765,7 @@ h4.number {
 
 .w3l-index4 .mask {
   overflow: hidden;
-  height: 320px;
+  height: 300px;
 }
 
 .w3l-index4 .clients-slider ul {
@@ -19776,14 +19776,16 @@ h4.number {
 
 .w3l-index4 .clients-slider li {
   width: 100%;
-  height: 320px;
+  height: 300px;
   position: absolute;
-  top: -325px;
+  top: 0;
   list-style: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .w3l-index4 .clients-slider .quote {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 38px;
   color: #fff;
   margin-top: 0.5rem;
@@ -19829,7 +19831,13 @@ h4.number {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-
+@keyframes rotate{
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  45% {opacity: 1;}
+  55% {opacity: 0;}
+  100% {opacity: 0;}
+}
 @-webkit-keyframes cycle {
   0% {
     top: 0px;
@@ -20656,12 +20664,12 @@ h4.inner-text-title {
 
 /* team section */
 
-.w3l-team .card{
+.w3l-team .card {
   margin: 15px;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
-.w3l-team .row{
+.w3l-team .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
