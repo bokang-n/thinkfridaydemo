@@ -644,7 +644,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #39129a;
 }
 
 .container,
@@ -710,7 +710,7 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
@@ -11786,7 +11786,7 @@ fieldset:disabled .btn {
   --primary-color: #034694;
   --primary-dark: #0d6efd;
   --font-color: #b7b7b7;
-  --bg-color: #19211e;
+  --bg-color: #000;
   --heading-color: #ffffff;
   --border-color-light: rgba(255, 255, 255, 0.2);
   --iframe-filter: grayscale(100%);
@@ -11796,7 +11796,7 @@ fieldset:disabled .btn {
   --box-shadow: 0 1rem 3rem rgb(15 20 18);
   --layer: rgb(0 0 0 / 48%);
   --layer-2: rgb(0 0 0 / 68%);
-  --footer-bg: #000;
+  --footer-bg: #0e1210;
   --footer-bglight: #111;
 }
 
@@ -19273,7 +19273,7 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(../images/banner1.jpg) no-repeat center top/cover;
+  background: url(../images/backgroundd.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
@@ -22026,3 +22026,24 @@ h5.texti {
 }
 
 /* //shortcodes page */
+.Partners {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures images fit nicely */
+}
