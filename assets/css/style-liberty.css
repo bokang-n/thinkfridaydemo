@@ -21962,6 +21962,7 @@ h5.texti {
   }
 }
 .testimonials {
+  margin-bottom: 80px;
   background-color: #000;
   padding: 60px 0 120px 0;
 }
@@ -22025,25 +22026,57 @@ h5.texti {
   background-color: #000;
 }
 
-/* //shortcodes page */
-.Partners {
-  padding: 50px 0;
-  text-align: center;
+.partner-section {
+  margin-top: 80px;
+  background-color: grey; /* Set background color to grey */
+  padding: 50px; /* Add padding for spacing */
 }
 
-.swiper-container {
-  width: 100%;
-  height: 300px; /* Adjust height as needed */
+.section-title {
+  text-align: center; /* Center the heading */
+  margin-bottom: 70px;
+  margin-top: 50px; /* Add space below the heading */
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.partner-list {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align partner logos */
+  flex-wrap: wrap; /* Allow wrapping of partner logos */
+  margin-top: 70px; /* Add space above partner logos */
+  overflow: hidden; /* Hide overflow to ensure smooth animation */
 }
 
-.swiper-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Ensures images fit nicely */
+.partner-logo {
+  margin-top: 8ch;
+  margin: 0 40px; /* Add horizontal space between partner logos */
+  flex: 0 1 auto; /* Allow logos to shrink and grow based on content */
+  animation: move 3s ease-in-out infinite; /* Add animation to move logos */
+}
+
+/* Adjust the specific logos' margins to bring Partner 1 and Partner 3 closer */
+.partner-logo.partner-1, .partner-logo.partner-2 {
+  margin: 1 90px; /* Reduce margin for Partner 1 and Partner 3 */
+}
+
+.partner-logo img {
+  width: 500px; /* Increase the width of images */
+  height: 250px; /* Increase the height of images */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.partner-logo img:hover {
+  transform: scale(1.1); /* Enlarge partner logo on hover */
+}
+
+/* Keyframes for side-to-side animation */
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px); /* Move left */
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
