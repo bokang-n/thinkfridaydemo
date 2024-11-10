@@ -4490,6 +4490,15 @@ fieldset:disabled .btn {
 .tab-content > .active {
   display: block;
 }
+.background-wrapper{
+  background: url("assets/images/pexels-jeshoots-218863.jpg");
+  background-size: cover;
+  position: relative;
+}
+.transparent-nav{
+  background: transparent;
+  z-index: 10;
+}
 
 .navbar {
   position: relative;
@@ -11781,6 +11790,8 @@ fieldset:disabled .btn {
   --layer-2: rgb(0 0 0 / 48%);
   --footer-bg: #000;
   --footer-bglight: #111;
+  --card-bg: #1A1A1A;
+  --border-color: #333333;
 }
 
 [data-theme="dark"] {
@@ -19274,7 +19285,7 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(../images/backgroundd.jpg) no-repeat center top/cover;
+  background: url(../images/bg4.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
@@ -19425,9 +19436,10 @@ h5.small-title {
   padding: 40px 30px;
   transition: all 0.5s ease 0s;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: none;
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
 }
 
 .box-wrap:hover {
@@ -20610,7 +20622,7 @@ p.post-footer a:hover {
 
 /* inner banner */
 .inner-banner {
-  background: url(../images/inner-banner.jpg) no-repeat top;
+  background: url(../images/laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
