@@ -4372,16 +4372,23 @@ fieldset:disabled .btn {
   border-top-right-radius: 0;
 }
 
-.navbar-brand img {
-  height: 60px; /* Set a height for the logo */
-  width: auto; /* Maintain aspect ratio */
-  display: block; /* Prevent extra space below the image */
-  padding-right: 10px;
-  margin-left: 60px;
-  margin-right: 0;
-  justify-items: end;
+.navbar {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Adjust padding as needed */
 }
 
+.navbar-brand {
+  display: flex; /* Ensure the brand container is also a flex container */
+  align-items: center; /* Center the logo vertically */
+}
+
+.navbar-brand img {
+  height: 50px; /* Set a height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent extra space below the image */
+  margin-right: 20px; /* Space between the logo and other navbar items */
+}
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -4407,7 +4414,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #0a58ca;
+  color: #1971f4;
 }
 
 .nav-link.disabled {
@@ -11971,10 +11978,10 @@ li {
 /* //container */
 
 /* toggle switch */
-.theme-switch-wrapper {
+/* .theme-switch-wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
 .theme-switch-wrapper em {
   margin-left: 10px;
@@ -19285,7 +19292,7 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(../images/bg4.jpg) no-repeat center top/cover;
+  background: url(../images/bg1.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
@@ -20515,10 +20522,10 @@ h4.number {
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   border-bottom: 1px solid rgb(255 255 255 / 34%);
-  padding-bottom: 8px;
-  font-weight: 800;
+  padding-bottom: 0px;
+  font-weight: 700;
   display: inline-block;
 }
 
