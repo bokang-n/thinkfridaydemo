@@ -159,6 +159,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 abbr[title],
@@ -4488,6 +4489,15 @@ fieldset:disabled .btn {
 
 .tab-content > .active {
   display: block;
+}
+.background-wrapper{
+  background: url("assets/images/pexels-jeshoots-218863.jpg");
+  background-size: cover;
+  position: relative;
+}
+.transparent-nav{
+  background: transparent;
+  z-index: 10;
 }
 
 .navbar {
@@ -11780,12 +11790,14 @@ fieldset:disabled .btn {
   --layer-2: rgb(0 0 0 / 48%);
   --footer-bg: #000;
   --footer-bglight: #111;
+  --card-bg: #1A1A1A;
+  --border-color: #333333;
 }
 
 [data-theme="dark"] {
   --primary-color: #034694;
   --primary-dark: #0d6efd;
-  --font-color: #b7b7b7;
+  --font-color: #eee;
   --bg-color: #000;
   --heading-color: #ffffff;
   --border-color-light: rgba(255, 255, 255, 0.2);
@@ -19273,7 +19285,7 @@ h5.small-title {
 }
 
 .slide:first-child {
-  background: url(../images/backgroundd.jpg) no-repeat center top/cover;
+  background: url(../images/bg4.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(2) {
@@ -19424,9 +19436,10 @@ h5.small-title {
   padding: 40px 30px;
   transition: all 0.5s ease 0s;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: none;
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
 }
 
 .box-wrap:hover {
@@ -19831,12 +19844,22 @@ h4.number {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-@keyframes rotate{
-  0% {opacity: 0;}
-  10% {opacity: 1;}
-  45% {opacity: 1;}
-  55% {opacity: 0;}
-  100% {opacity: 0;}
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @-webkit-keyframes cycle {
   0% {
@@ -20599,7 +20622,7 @@ p.post-footer a:hover {
 
 /* inner banner */
 .inner-banner {
-  background: url(../images/inner-banner.jpg) no-repeat top;
+  background: url(../images/laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22054,7 +22077,8 @@ h5.texti {
 }
 
 /* Adjust the specific logos' margins to bring Partner 1 and Partner 3 closer */
-.partner-logo.partner-1, .partner-logo.partner-2 {
+.partner-logo.partner-1,
+.partner-logo.partner-2 {
   margin: 1 90px; /* Reduce margin for Partner 1 and Partner 3 */
 }
 
