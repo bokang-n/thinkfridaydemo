@@ -4372,23 +4372,16 @@ fieldset:disabled .btn {
   border-top-right-radius: 0;
 }
 
-.navbar {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center items vertically */
-  padding: 10px; /* Adjust padding as needed */
-}
-
-.navbar-brand {
-  display: flex; /* Ensure the brand container is also a flex container */
-  align-items: center; /* Center the logo vertically */
-}
-
 .navbar-brand img {
-  height: 50px; /* Set a height for the logo */
+  height: 60px; /* Set a height for the logo */
   width: auto; /* Maintain aspect ratio */
   display: block; /* Prevent extra space below the image */
-  margin-right: 20px; /* Space between the logo and other navbar items */
+  padding-right: 10px;
+  margin-left: 60px;
+  margin-right: 0;
+  justify-items: end;
 }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -4414,7 +4407,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #1971f4;
+  color: #0a58ca;
 }
 
 .nav-link.disabled {
@@ -11780,7 +11773,7 @@ fieldset:disabled .btn {
 
 /* css style */
 :root {
-  --primary-color: #1177ff;
+  --primary-color: #034694;
   --primary-dark: #0d6efd;
   --font-color: #484747;
   --bg-color: #fff;
@@ -11978,10 +11971,10 @@ li {
 /* //container */
 
 /* toggle switch */
-/* .theme-switch-wrapper {
+.theme-switch-wrapper {
   display: flex;
   align-items: center;
-} */
+}
 
 .theme-switch-wrapper em {
   margin-left: 10px;
@@ -13300,13 +13293,13 @@ li {
   content: "\f73b";
 }
 
-/* .fa-cloud-moon:before {
+.fa-cloud-moon:before {
   content: "\f6c3";
-} */
+}
 
-/* .fa-cloud-moon-rain:before {
+.fa-cloud-moon-rain:before {
   content: "\f73c";
-} */
+}
 
 .fa-cloud-rain:before {
   content: "\f73d";
@@ -15680,9 +15673,9 @@ li {
   content: "\f5a6";
 }
 
-/* .fa-moon:before {
+.fa-moon:before {
   content: "\f186";
-} */
+}
 
 .fa-mortar-pestle:before {
   content: "\f5a7";
@@ -18186,7 +18179,7 @@ li {
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
 }
-/* 
+
 .gg-moon {
   overflow: hidden;
   position: relative;
@@ -18195,9 +18188,9 @@ li {
   height: 20px;
   border: 2px solid;
   border-bottom: 2px solid transparent;
-} */
+}
 
-/* .gg-moon,
+.gg-moon,
 .gg-moon:after {
   display: block;
   box-sizing: border-box;
@@ -18218,7 +18211,7 @@ li {
   box-shadow: 0 0 0 2px;
   top: 8px;
   left: 2px;
-} */
+}
 
 .gg-sun,
 .gg-sun:after,
@@ -18251,19 +18244,19 @@ li {
   display: none;
 }
 
-/* .mode-container i.gg-moon {
+.mode-container i.gg-moon {
   display: block;
   cursor: pointer;
-} */
+}
 
 input:checked + .mode-container i.gg-sun {
   display: block;
   cursor: pointer;
 }
 
-/* input:checked + .mode-container i.gg-moon {
+input:checked + .mode-container i.gg-moon {
   display: none;
-} */
+}
 
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
   color: var(--heading-color);
@@ -19296,11 +19289,11 @@ h5.small-title {
 }
 
 .slide:nth-child(2) {
-  background: url(../images/BBBEE1\ \(1\).jpg) no-repeat center top/cover;
+  background: url(../images/banner2.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url(../images/BBBEE1\ \(3\).jpg) no-repeat center top/cover;
+  background: url(../images/banner3.jpg) no-repeat center top/cover;
 }
 
 .slide:nth-child(4) {
@@ -20522,10 +20515,10 @@ h4.number {
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   border-bottom: 1px solid rgb(255 255 255 / 34%);
-  padding-bottom: 0px;
-  font-weight: 700;
+  padding-bottom: 8px;
+  font-weight: 800;
   display: inline-block;
 }
 
@@ -20542,7 +20535,7 @@ h4.number {
 p.post-footer a {
   color: #fff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 p.post-footer a:hover {
@@ -20618,7 +20611,6 @@ p.post-footer a:hover {
   color: #fff;
   line-height: 26px;
   font-size: 16px;
-  font-weight: 400;
 }
 
 .w3l-footer .column2 a:hover {
@@ -21991,7 +21983,8 @@ h5.texti {
     padding: 0.5rem;
     font-size: 15px;
   }
-}.testimonials {
+}
+.testimonials {
   margin-bottom: 80px;
   background-color: #000;
   padding: 60px 0 120px 0;
@@ -22030,13 +22023,13 @@ h5.texti {
   color: #000;
 }
 .testimonials .testimonial-item p {
-  font-size: 14px;
+  font-size: 14px; /* Slightly smaller font size */
   color: #fff;
   line-height: 1.5;
-  margin: 10px 0;
-  padding: 10px;
-  overflow-wrap: break-word;
-  text-align: justify;
+  padding: 10px; /* Adds padding for text containment */
+  margin: 0; /* Removes extra margin */
+  overflow-wrap: break-word; /* Prevents long words from overflowing */
+  text-align: justify; /* Distributes text more evenly */
 }
 
 .testimonials .testimonial-item .stars i {
@@ -22064,7 +22057,8 @@ h5.texti {
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #000;
-} 
+}
+
 .partner-section {
   margin-top: 80px;
   background-color: grey; /* Set background color to grey */
