@@ -22001,7 +22001,7 @@ h5.texti {
 }
 .testimonials .swiper {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
-  background-color: #fff;
+  background-color: #1a1a1a;
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -22020,7 +22020,7 @@ h5.texti {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #000;
+  color: #fff;
 }
 .testimonials .testimonial-item h4 {
   color: rgba(33, 37, 41, 0.5);
@@ -22030,7 +22030,7 @@ h5.texti {
 }
 .testimonials .testimonial-item p {
   font-size: 14px;
-  color: #333;
+  color: #fff;
   line-height: 1.5;
   margin: 10px 0;
   padding: 10px;
