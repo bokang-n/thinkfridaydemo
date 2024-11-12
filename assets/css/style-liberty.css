@@ -13300,13 +13300,13 @@ li {
   content: "\f73b";
 }
 
-.fa-cloud-moon:before {
+/* .fa-cloud-moon:before {
   content: "\f6c3";
-}
+} */
 
-.fa-cloud-moon-rain:before {
+/* .fa-cloud-moon-rain:before {
   content: "\f73c";
-}
+} */
 
 .fa-cloud-rain:before {
   content: "\f73d";
@@ -15680,9 +15680,9 @@ li {
   content: "\f5a6";
 }
 
-.fa-moon:before {
+/* .fa-moon:before {
   content: "\f186";
-}
+} */
 
 .fa-mortar-pestle:before {
   content: "\f5a7";
@@ -18186,7 +18186,7 @@ li {
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
 }
-
+/* 
 .gg-moon {
   overflow: hidden;
   position: relative;
@@ -18195,9 +18195,9 @@ li {
   height: 20px;
   border: 2px solid;
   border-bottom: 2px solid transparent;
-}
+} */
 
-.gg-moon,
+/* .gg-moon,
 .gg-moon:after {
   display: block;
   box-sizing: border-box;
@@ -18218,7 +18218,7 @@ li {
   box-shadow: 0 0 0 2px;
   top: 8px;
   left: 2px;
-}
+} */
 
 .gg-sun,
 .gg-sun:after,
@@ -18251,19 +18251,19 @@ li {
   display: none;
 }
 
-.mode-container i.gg-moon {
+/* .mode-container i.gg-moon {
   display: block;
   cursor: pointer;
-}
+} */
 
 input:checked + .mode-container i.gg-sun {
   display: block;
   cursor: pointer;
 }
 
-input:checked + .mode-container i.gg-moon {
+/* input:checked + .mode-container i.gg-moon {
   display: none;
-}
+} */
 
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
   color: var(--heading-color);
