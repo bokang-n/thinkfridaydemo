@@ -20542,7 +20542,7 @@ h4.number {
 p.post-footer a {
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 p.post-footer a:hover {
@@ -20618,6 +20618,7 @@ p.post-footer a:hover {
   color: #fff;
   line-height: 26px;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .w3l-footer .column2 a:hover {
