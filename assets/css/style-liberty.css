@@ -11797,7 +11797,7 @@ fieldset:disabled .btn {
   --layer-2: rgb(0 0 0 / 48%);
   --footer-bg: #000;
   --footer-bglight: #111;
-  --card-bg: #1A1A1A;
+  --card-bg: #000;
   --border-color: #333333;
 }
 
