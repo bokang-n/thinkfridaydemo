@@ -18744,6 +18744,7 @@ div#small-dialog iframe {
   transform: scale(1);
 }
 
+
 /* animate out */
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
   transform: scale(0.8);
@@ -22093,7 +22094,7 @@ h5.texti {
 }
 
 .partner-logo img {
-  width: 500px; /* Increase the width of images */
+  width: 400px; /* Increase the width of images */
   height: 250px; /* Increase the height of images */
   transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
