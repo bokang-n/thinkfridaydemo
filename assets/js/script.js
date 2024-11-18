@@ -1,16 +1,19 @@
 const commentForm = document.getElementById("commentForm");
+const commentsGrid = document.getElementById("comments-grids");
 const newComment = document.getElementById("newComment");
 const userNameInput = document.getElementById("userName");
 
-// Fetch existing comments from the server
+// Load comments from the server
 window.onload = function() {
     fetch("/api/comments")
         .then(response => response.json())
         .then(comments => {
             comments.forEach(comment => displayComment(comment));
-        });
+        })
+        .catch(error => console.error("Error loading comments:", error));
 };
 
+// Handle form submission
 if (commentForm && newComment && userNameInput) {
     commentForm.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -33,7 +36,8 @@ if (commentForm && newComment && userNameInput) {
             .then(response => response.json())
             .then(comment => {
                 displayComment(comment);
-            });
+            })
+            .catch(error => console.error("Error posting comment:", error));
 
             // Clear form fields
             newComment.value = "";
@@ -65,5 +69,5 @@ function displayComment(comment) {
         </div>
     `;
 
-    document.getElementById("comments-grids").appendChild(commentElement);
+    commentsGrid.appendChild(commentElement);
 }

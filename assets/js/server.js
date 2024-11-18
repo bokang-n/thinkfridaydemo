@@ -1,32 +1,42 @@
 const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
-
+const fs = require("fs");
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
-// Store comments in-memory (you can later connect to a database)
-let comments = [];
+app.use(express.json());
+app.use(express.static(__dirname)); // Serves static files from the root
 
-// Middleware to parse JSON data
-app.use(bodyParser.json());
+// Load comments from JSON file
+const loadComments = () => {
+    try {
+        const data = fs.readFileSync("comments.json", "utf8");
+        return JSON.parse(data) || [];
+    } catch (error) {
+        console.error("Error loading comments:", error);
+        return [];
+    }
+};
 
-// Serve static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, "thinkfriday")));
+// Save comments to JSON file
+const saveComments = (comments) => {
+    fs.writeFileSync("comments.json", JSON.stringify(comments, null, 2));
+};
 
-// API endpoint to get all comments
+// API route to get all comments
 app.get("/api/comments", (req, res) => {
+    const comments = loadComments();
     res.json(comments);
 });
 
-// API endpoint to add a new comment
+// API route to add a new comment
 app.post("/api/comments", (req, res) => {
-    const { user, text, date } = req.body;
-    const newComment = { user, text, date };
+    const newComment = req.body;
+    const comments = loadComments();
     comments.push(newComment);
+    saveComments(comments);
     res.status(201).json(newComment);
 });
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
