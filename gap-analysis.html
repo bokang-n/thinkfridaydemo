@@ -1,0 +1,518 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ThinkFriday</title>
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+</head>
+
+<body>
+
+<meta name="robots" content="noindex">
+<body><link rel="stylesheet" href="../../../../../../assests/css/font-awesome.min.css">
+<!-- New toolbar-->
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top:70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+</style>
+ 
+
+<div class="background-wrapper">
+   <!-- header -->
+<header id="site-header" class="fixed-top transparent-nav">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/banner-removebg-preview.png" alt="Think Friday" />
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#whychoose">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#partners">Our Partners</a>
+                    </li>
+                    <li>
+                         <a class="nav-link" href="blog.html">Blog</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- toggle switch for light and dark theme -->
+            <div class="cont-ser-position">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <!-- <i class="gg-moon"></i> -->
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            <!-- //toggle switch for light and dark theme -->
+        </nav>
+    </div>
+</header>
+<!-- //header -->
+
+
+    <!-- inner banner -->
+    <section class="inner-banner py-5">
+        <div class="w3l-breadcrumb py-lg-5">
+            <div class="container pt-5 pb-sm-4">
+                <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">BBBEE Calculator</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>Calculator</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //inner banner -->
+</div>
+<div style="margin: 8px auto; display: block; text-align:center;">
+    <section class="w3l-contact-info-main pb-5 pt-4" id="contact">
+        <div class="container pb-lg-5 pb-md-4 pb-2">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/xdkognjk" method="POST">
+                        <div class="row">
+                            <!-- First Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First Name</label>
+                                <input class="form-control" type="text" name="firstName" id="firstName" required="">
+                            </div>
+    
+                            <!-- Last Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last Name</label>
+                                <input class="form-control" type="text" name="lastName" id="lastName" required="">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <!-- Email -->
+                            <div class="col-md-6 mb-3">
+                                <label for="email">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" required="">
+                            </div>
+    
+                            <!-- Mobile Number -->
+                            <div class="col-md-6 mb-3">
+                                <label for="mobile">Mobile Number</label>
+                                <input class="form-control" type="tel" name="mobile" id="mobile" required="">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <!-- Company -->
+                            <div class="col-md-6 mb-3">
+                                <label for="company">Company</label>
+                                <input class="form-control" type="text" name="company" id="company" required="">
+                            </div>
+    
+                            <!-- Position -->
+                            <div class="col-md-6 mb-3">
+                                <label for="position">Position</label>
+                                <input class="form-control" type="text" name="position" id="position" required="">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <!-- Company Turnover -->
+                            <div class="col-md-6 mb-3">
+                                <label for="turnover">Company Turnover</label>
+                                <select class="form-control" name="turnover" id="turnover" required="">
+                                    <option value="">Select Turnover</option>
+                                    <option value="Under 1 Million">Under 1 Million</option>
+                                    <option value="1-5 Million">1-5 Million</option>
+                                    <option value="5-10 Million">5-10 Million</option>
+                                    <option value="Over 10 Million">Over 10 Million</option>
+                                </select>
+                            </div>
+    
+                            <!-- Submit Button -->
+                            <div class="col-md-6 mb-3 text-end">
+                                <button type="submit" class="btn btn-style">Submit Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add this CSS to ensure proper layout and preserve input size -->
+    <style>
+        .w3l-contact-info-main .row {
+            margin-bottom: 15px;
+        }
+    
+        .w3l-contact-info-main .col-md-6 {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    
+        .w3l-contact-info-main .form-group label {
+            text-align: left;
+        }
+    
+        .w3l-contact-info-main .form-group {
+            margin-bottom: 1.5rem;
+        }
+    
+        .w3l-contact-info-main .form-control {
+            width: 100%; /* Ensure input fields take full width of the column */
+        }
+    
+        /* Align submit button and company turnover horizontally */
+        .w3l-contact-info-main .row .col-md-6 {
+            display: inline-block;
+            width: 48%; /* Two columns next to each other with a small gap */
+        }
+    
+        .w3l-contact-info-main .text-end {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+    
+</div>
+    
+  <!-- footer -->
+  <footer class="w3l-footer py-5">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-lg-4 sub-one-left">
+                <h6>Useful Links </h6>
+                <p class="post-footer"><a href="#page">Home</a></p>
+                <p class="post-footer"><a href="#whychoose">About Us</a></p>
+                <p class="post-footer"><a href="services.html">Services</a></p>
+                <p class="post-footer"><a href="#team">Our Team</a></p>
+                <p class="post-footer"><a href="#partners">Our Partners</a></p>
+                <p class="post-footer"><a href="#post">Testimonials</a></p>
+                <p class="post-footer"><a href="contact.html">Contact Us</a></p>
+                <p></p>
+            </div>
+            <div class="col-lg-5 col-md-6 mt-lg-0 mt-5 px-lg-5 sub-two-right">
+                <h6>Our Services</h6>
+                <div class="footer-post">
+                    <ul>
+                        <li><a href="#post"> <!--</a>BBBEE Advisory & Consulting--></li>
+                        <li class="mx-2"><a href="#post"> <!-- - Nov. 21 --> </a></li>
+                        <li><a href="#post"><!--3 comments--></a></li>
+                    </ul>
+                    <p class="post-footer"><a href="services-link-skill.html">Skills Development training</a></p>
+                    <p class="post-footer"><a href="services-link-bbee.html">BBBEE Advisory & Consulting</a></p>
+                    <p class="post-footer"><a href="services-link-hr.html">Human Resources (HR) Consulting</a></p>
+  
+                    <br><br>
+                    <h6>Subscribe to our Newsletter</h6>
+                    <br>
+                    <br>
+                    <div class="col-lg-12 text-center">
+                        
+                        <form action="https://formspree.io/f/xdkognjk" method="POST" class="d-flex justify-content-center">
+                          <br>
+                            <input type="email" name="email" placeholder="Your email here" required class="form-control me-2" style="max-width: 300px;">
+                            <button type="submit" class="btn btn-style">Subscribe</button>
+                        </form>
+                    </div>
+                   
+                </div>
+                <div class="footer-post mt-4">
+                    <ul>
+                        <li><a href="#post"> <!--Human Resources (HR) Consulting--></a></li>
+                        <li class="mx-2"><a href="#post"><!-- Nov. 21 --> </a></li>
+                        <li><a href="#post"><!--3 comments --></a></li>
+                    </ul>
+                </div>
+  
+            </div>
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-5 sub-one-left">
+                <h6>Contact </h6>
+                <div class="column2">
+                    <div class="href1"><span class="fas fa-envelope-open"></span>
+                        <a href="mailto:tariq@thinkfriday.co.za">tariq@thinkfriday.co.za</a>
+                    </div>
+                    <div class="href2 my-3"><span class="fas fa-phone-alt"></span><a href="tel:+27108803793">+27 10 880 3793</a>
+                    </div>
+                    <div>
+                        <p class="contact-para mb-3"><span class="fas fa-map-marker-alt"></span>
+                            210 Epsom Ave, Hoogland,2169
+                    </div>
+                    <div>
+                        <p class="contact-para"><span class="fas fa-clock"></span>Office Hours: 08h30 - 16h30</p>
+                    </div>
+                </div>
+            </div>
+        </div
+        
+        <div class="copyright-footer text-center mt-5 pt-sm-4 pt-2">
+            <p>&copy; 2024 ThinkFriday. All rights reserved
+            </p>
+            <ul class="social mt-4 pt-lg-1">
+                <li><a href="https://www.facebook.com/people/ThinkFriday-PTY-LTD/100063479584962/"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="https://x.com/i/flow/login?redirect_after_login=%2FThinkFriday"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="https://www.linkedin.com/company/thinkfriday-pty-ltd/?originalSubdomain=za"><span class="fab fa-linkedin-in"></span></a></li>
+                <li><a href="https://www.instagram.com/think_friday_pty_ltd/"><span class="fab fa-instagram"></span></a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+  <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <script
+    chatbot_id="6728c728b9d6895b34db7c2c"
+    src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js">
+    </script>  
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap -->
+    <!-- //Js scripts -->
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8dceadb7cdc995f2',t:'MTczMDY2MTE3NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/22755d9a86c9/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

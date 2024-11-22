@@ -300,10 +300,17 @@ RIGHT SIDEBAR TOGGLE SECTION
                                 <li>
                                     <p class="m-0 mr-4">Share this post :</p>
                                 </li>
-                                <li><a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
+                                <li>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/blog-single2.html" class="facebook" target="_blank" rel="noopener noreferrer">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
                                 </li>
-                                <li><a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#linkedin" class="linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                <li><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:5500/blog-single2.html&text=Check+out+this+amazing+post+by+Think+Friday!" class="twitter" target="_blank" rel="noopener noreferrer">
+                                    <span class="fab fa-twitter"></span>
+                                </a></li>
+                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:5500/blog-single2.html&title=Amazing+Blog+Post&summary=This+is+a+great+blog+post.&source=Think+Friday" class="linkedin" target="_blank" rel="noopener noreferrers">
+                                    <span class="fab fa-linkedin-in"></span>
+                                </a>
                                 </li>
                             </ul>
                         </div>
@@ -325,100 +332,37 @@ RIGHT SIDEBAR TOGGLE SECTION
                                     <img src="assets/images/BBBEE1 (1).jpg" alt="" class="img-fluid radius-image" />
                                 </a>
                             </div>
-                        </div><!-- 
-                        <div class="comments">
-                            <h3 class="aside-title ">Recent comments</h3>
-                            <div class="comments-grids">
-                                <div class="media-grid">
-                                    <div class="media">
-                                        <a class="com" href="#"><img src="assets/images/testi2.jpg"
-                                                class="img-fluid radius-image" width="100px"
-                                                alt="placeholder image"></a>
-                                        <div class="media-body comments-grid-right">
-                                            <h5>Elexa kim</h5>
-                                            <ul class="p-0">
-                                                <li class="">Nov 28, 2021.
-                                                </li>
-                                                <li>
-                                                    <a href="#comment" class="">Reply</a>
-                                                </li>
-                                            </ul>
-                                            <p>Mattis ut hendrerit non, facilisis eget mauris. Sed ultricies nec purus
-                                                quis
-                                                tempor. ipsum eu nec purus quis tempor dolor set.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-grid even-grid">
-                                    <div class="media">
-                                        <a class="com" href="#"><img src="assets/images/testi3.jpg"
-                                                class="img-fluid radius-image" width="100px"
-                                                alt="placeholder image"></a>
-                                        <div class="media-body comments-grid-right">
-                                            <h5>Charlie</h5>
-                                            <ul class="p-0">
-                                                <li class="">Nov 28, 2021.
-                                                </li>
-                                                <li>
-                                                    <a href="#comment" class="">Reply</a>
-                                                </li>
-                                            </ul>
-                                            <p>Mattis ut hendrerit non, facilisis eget mauris. Sed ultricies nec purus
-                                                quis
-                                                tempor. Phasellus eu nec purus quis tempor.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-grid">
-                                    <div class="media">
-                                        <a class="com" href="#"><img src="assets/images/testi1.jpg"
-                                                class="img-fluid radius-image" width="100px"
-                                                alt="placeholder image"></a>
-                                        <div class="media-body comments-grid-right">
-                                            <h5>Jack Harry</h5>
-                                            <ul class="p-0">
-                                                <li class="">Nov 28, 2021.
-                                                </li>
-                                                <li>
-                                                    <a href="#comment" class="">Reply</a>
-                                                </li>
-                                            </ul>
-                                            <p>Mattis ut hendrerit non, facilisis eget mauris. Sed ultricies nec purus
-                                                quis
-                                                tempor, ipsum bibendum purus quis tempor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="leave-comment-form" id="comment">
-                            <h3 class="aside-title">Leave a reply</h3>
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <textarea name="Comment" class="form-control" placeholder="Your Comment"
-                                        required=""></textarea>
-                                </div>
-                                <div class="input-grids">
-                                    <div class="form-group">
-                                        <input type="text" name="Name" class="form-control" placeholder="Your Name"
-                                            required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="Email" class="form-control" placeholder="Email"
-                                            required="">
-                                    </div>
-                                </div>
-                                <div class="submit text-end">
-                                    <button class="btn btn-style btn-style-3 mt-2">Post Comment</a>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5 ps-md-5">
                     <aside class="sidebar">
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h4>Search here</h4>
+                            </div>
+                            <form action="#" class="search-box" method="post">
+                                <div class="form-group">
+                                    <input type="search" name="search" placeholder="Search..." required="">
+                                    <button><span class="fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h4>Popular Topics</h4>
+                            </div>
+                            <ul class="blog-cat">
+                                <li><a href="#url">BBBEE Compliance and Regulations </a></li>
+                                <li><a href="#url">Workplace Transformation and Empowerment</a></li>
+                                <li><a href="#url">Social Impact in Business</a></li>
+                                <li><a href="#url">Skills Development in South Africa</a></li>
+                                <li><a href="#url">Effective use of ATRs</a></li>
+                                <li><a href="/blog.html">All Topics </a></li>
+                            </ul>
+                        </div>
+
                         <!-- Popular Post Widget-->
                         <div class="sidebar-widget popular-posts">
                             <div class="sidebar-title">
@@ -442,6 +386,25 @@ RIGHT SIDEBAR TOGGLE SECTION
                                 <div class="post-info">November 06, 2024</div>
                             </article>
                         </div>
+                         <!-- sidebar sticky -->
+ <div class="sidebar-sticky">
+    <div class="sidebar-sticky-fix">
+        <!-- Tags Widget-->
+        <div class="sidebar-widget popular-tags">
+            <div class="sidebar-title">
+                <h4>Tags</h4>
+            </div>
+            <a href="#url">Inclusivity</a>
+            <a href="#url">Annual Transformation report (ATR)</a>
+            <a href="#url">Socio-Economic Development</a>
+            <a href="#url">Business Strategy</a>
+            <a href="#url">Accountability</a>
+            <a href="#url">Business Compliance</a>
+            <a href="#url">Stakeholder Collaboration</a>
+            <a href="#url">Corporate Social Responsibility</a>
+        </div>
+    </div>
+</div>
                     </aside>
                 </div>
             </div>
